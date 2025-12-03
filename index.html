@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classes Heróicas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Dragon Hunt</h1>
     <div class="card">
-        <h1>Ataque do Herói</h1>
-        <p id="card__action_result"">Aguardando Ação</p>
-        <button id="card__action_button" onclick="atacar()">Atacar!</button>
+        <p id="card__action_result"">Ataque o Dragão!</p>
     </div>
+    <h2>Escolha o atacante:</h2>
+        <div class="card__actions">
+            <button class="card__action_button" style="background-color: #a52a2a;" onclick="class1.atacar()">Guerreiro</button>
+            <button class="card__action_button" style="background-color: #ff0000;" onclick="class2.atacar()">Mago</button>
+            <button class="card__action_button" style="background-color: #008000;" onclick="class3.atacar()">Ladino</button>
+            <button class="card__action_button" style="background-color: #17dac9;" onclick="class4.atacar()">Paladino</button>
+            <button class="card__action_button" style="background-color: gray;" onclick="class5.atacar()">Arqueiro</button>
+        </div>
 
     <script src="main.js" defer></script>
 </body>
